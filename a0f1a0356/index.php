@@ -437,7 +437,7 @@ include '../librari/inc.conection.php';
             <div class="col-xl-3 col-lg-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="stat-widget-one"><a href='?page=views&views=pinjamBukuView'>
+                        <div class="stat-widget-one"><a href=''>
                             <div class="stat-icon dib"><i class="ti-book bg-danger text-light"></i></div>
                             <div class="stat-content dib">
                                 <div class="stat-text">Peminjaman Buku</div>
