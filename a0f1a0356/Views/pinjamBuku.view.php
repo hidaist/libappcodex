@@ -13,6 +13,7 @@ $sqlPinjamBuku = mysqli_query($koneksi, "SELECT tb_lib_peminjaman.kd_pinjam, tb_
                                                         FROM tb_lib_peminjaman
                                                         JOIN tb_lib_users on tb_lib_peminjaman.kd_user = tb_lib_users.kd_user
                                                         JOIN tb_lib_buku on tb_lib_peminjaman.kd_buku = tb_lib_buku.kd_buku
+                                                        WHERE tb_lib_users.kd_user='".$_SESSION['kd_user']."'
  ");
 
 
@@ -57,30 +58,7 @@ $sqlPinjamBuku = mysqli_query($koneksi, "SELECT tb_lib_peminjaman.kd_pinjam, tb_
                
 <div class="content mt-3">
             <div class="animated">
-                <div class="row">
-                <button type="button" class="btn-sm btn-success mb-1" data-toggle="modal" data-target="#largeModal">
-                Tambah Data Pinjam Buku
-                        </button>
-                        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document"> 
-                        <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="largeModalLabel"></h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body  table-responsive">
-                                        
-                                    <?php include_once "forms/pinjamBuku.form.php"; ?>
-                                    
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+               
                     <div class="col-lg-12  animated fadeIn">
                         <div class="card">
                             <div class="card-header" align="center">
