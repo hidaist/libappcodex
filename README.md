@@ -23,7 +23,7 @@ Library Pendukung: Bootstrap, jQuery
 
 Import file database ( .sql) ke MySQL.
 
-Sesuaikan konfigurasi koneksi database di file librari/inc.koneksi.php
+Sesuaikan konfigurasi koneksi database di file librari/inc.connection.php
 
 Jalankan aplikasi melalui browser.
 
